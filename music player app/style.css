@@ -1,0 +1,106 @@
+html{
+    font-family: "lemonada", cursive;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+body{
+    background: radial-gradient(#3dc0c0, #197ba6, #2d0f8c);
+    font-weight: 1.2rem;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#player{
+    background:radial-gradient(#574d78, #784d5b, #333d35);
+    padding: 2rem;
+    border-radius: 2rem;
+
+}
+
+img{
+    width: 50%;
+}
+
+#musicList{
+    background: whitesmoke;
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    text-align: left;
+}
+
+li{
+    padding: 1.5rem;
+}
+
+li:hover{
+    cursor: pointer;
+    color: rgb(177, 72, 177);
+}
+
+#controls{
+    border: 1px lightblue solid;
+    border-radius: 1.0rem;
+    padding: 2rem;
+    background: lightskyblue;
+}
+
+.controls_Wrapper > span{
+    cursor: pointer;
+    color: grey;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+#currentlyPlaying{
+    overflow: hidden;
+}
+
+svg, i {
+    color: rgba(83, 90, 90, 0.247);
+}
+
+a:hover{
+    color: mediumorchid;
+}
+
+footer{
+    text-align: right;
+    color: white;
+
+}
+
+progress{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pulse{
+    animation: pulse;
+    animation-duration:0.4s;
+}
+
+@keyframes pulse{
+    from{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 800px){
+    body{
+        max-width: 60vw;
+        font-size: 1.8rem;
+    }
+}
+
